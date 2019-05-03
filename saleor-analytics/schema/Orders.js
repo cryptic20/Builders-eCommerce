@@ -13,4 +13,4 @@ cube(`Orders`, {
       sql: `created`
     }
   }
-  });
+ });

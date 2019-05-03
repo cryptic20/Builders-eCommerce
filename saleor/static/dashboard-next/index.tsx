@@ -11,6 +11,7 @@ import { render } from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as Cookies from "universal-cookie";
 
+import AnalyticsPage from "./analytics";
 import { getAuthToken, removeAuthToken } from "./auth";
 import AuthProvider from "./auth/AuthProvider";
 import LoginLoading from "./auth/components/LoginLoading/LoginLoading";
@@ -32,7 +33,6 @@ import ConfigurationSection, { configurationMenu } from "./configuration";
 import { CustomerSection } from "./customers";
 import DiscountSection from "./discounts";
 import HomePage from "./home";
-import AnalyticsPage from "./analytics";
 import i18n from "./i18n";
 import { NotFound } from "./NotFound";
 import OrdersSection from "./orders";
