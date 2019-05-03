@@ -90,6 +90,7 @@ function loadStories() {
 
   // Orders
   require("./stories/orders/OrderAddressEditDialog");
+  require("./stories/orders/OrderBulkCancelDialog");
   require("./stories/orders/OrderCancelDialog");
   require("./stories/orders/OrderCustomer");
   require("./stories/orders/OrderCustomerEditDialog");
@@ -129,6 +130,10 @@ function loadStories() {
   // Taxes
   require("./stories/taxes/CountryListPage");
   require("./stories/taxes/CountryTaxesPage");
+
+  // Translations
+  require("./stories/translations/TranslationsEntitiesListPage");
+  require("./stories/translations/TranslationsLanguageListPage");
 }
 
 configure(loadStories, module);

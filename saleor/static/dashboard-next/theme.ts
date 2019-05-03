@@ -54,10 +54,10 @@ export default (colors: IThemeColors): Theme =>
           flexDirection: "row-reverse" as "row-reverse"
         }
       },
-
       MuiInput: {
         input: {
           "&:-webkit-autofill": {
+            WebkitTextFillColor: colors.font.default,
             boxShadow: `inset 0 0 0px 9999px ${colors.autofill}`
           },
           "&::placeholder": {
@@ -142,14 +142,20 @@ export default (colors: IThemeColors): Theme =>
         },
         head: {
           fontSize: ".875rem",
-          fontWeight: 600
+          fontWeight: 400
+        },
+        paddingCheckbox: {
+          width: 72
         },
         root: {
           "&:first-child": {
-            paddingLeft: 24 + "px",
-            textAlign: "left" as "left"
+            "&:not($paddingCheckbox)": {
+              paddingLeft: 24 + "px",
+              textAlign: "left" as "left"
+            }
           },
           borderBottomColor: colors.paperBorder,
+          height: 56,
           padding: "4px 24px 4px 0"
         }
       },
@@ -167,6 +173,11 @@ export default (colors: IThemeColors): Theme =>
         hover: {
           "$root&:hover": {
             backgroundColor: fade(colors.primary, 0.2)
+          }
+        },
+        root: {
+          "&$selected": {
+            backgroundColor: fade(colors.primary, 0.05)
           }
         }
       }
