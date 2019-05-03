@@ -82,7 +82,7 @@ def product_toggle_is_published(request, pk):
 @staff_member_required
 @permission_required('product.manage_products')
 def product_select_type(request):
-    """View for add product modal embedded in the product list view."""
+    """View for add product modal embedded in the product list views."""
     form = forms.ProductTypeSelectorForm(request.POST or None)
     status = 200
     if form.is_valid():

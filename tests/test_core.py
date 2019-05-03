@@ -235,7 +235,7 @@ def test_set_language_redirects_to_current_endpoint(client):
     assert new_url == current_url
 
     # change the user language to French,
-    # and tell the view we want to be redirected to our current page
+    # and tell the views we want to be redirected to our current page
     set_language_url = reverse('set_language')
     data = {'language': new_user_language, 'next': current_url}
 

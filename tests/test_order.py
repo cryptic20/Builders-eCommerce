@@ -191,7 +191,7 @@ def test_view_order_with_deleted_variant(authorized_client, order_with_lines):
     # delete a variant associated to the order
     order.lines.first().variant.delete()
 
-    # check if the order details view handles the deleted variant
+    # check if the order details views handles the deleted variant
     response = authorized_client.get(order_details_url)
     assert response.status_code == 200
 
@@ -204,7 +204,7 @@ def test_view_fulfilled_order_with_deleted_variant(
     # delete a variant associated to the order
     order.lines.first().variant.delete()
 
-    # check if the order details view handles the deleted variant
+    # check if the order details views handles the deleted variant
     response = authorized_client.get(order_details_url)
     assert response.status_code == 200
 

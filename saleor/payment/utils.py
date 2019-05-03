@@ -89,7 +89,7 @@ def handle_fully_paid_order(order):
 def require_active_payment(view):
     """Require an active payment instance.
 
-    Decorate a view to check if payment is authorized, so any actions
+    Decorate a views to check if payment is authorized, so any actions
     can be performed on it.
     """
     @wraps(view)

@@ -18,11 +18,11 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterModelOptions(
             name='category',
-            options={'permissions': (('view_category', 'Can view categories'), ('edit_category', 'Can edit categories'))},
+            options={'permissions': (('view_category', 'Can views categories'), ('edit_category', 'Can edit categories'))},
         ),
         migrations.AlterModelOptions(
             name='product',
-            options={'permissions': (('view_product', 'Can view products'), ('edit_product', 'Can edit products'), ('view_properties', 'Can view product properties'), ('edit_properties', 'Can edit product properties'))},
+            options={'permissions': (('view_product', 'Can views products'), ('edit_product', 'Can edit products'), ('view_properties', 'Can views product properties'), ('edit_properties', 'Can edit product properties'))},
         ),
         migrations.AlterModelOptions(
             name='productattribute',

@@ -35,7 +35,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterModelOptions(
             name='order',
-            options={'permissions': (('view_order', 'Can view orders'), ('edit_order', 'Can edit orders'))},
+            options={'permissions': (('view_order', 'Can views orders'), ('edit_order', 'Can edit orders'))},
         ),
         migrations.AddField(
             model_name='orderline',

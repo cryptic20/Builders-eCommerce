@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
             ],
             options={
                 'ordering': ('slug',),
-                'permissions': (('view_page', 'Can view pages'), ('edit_page', 'Can edit pages')),
+                'permissions': (('view_page', 'Can views pages'), ('edit_page', 'Can edit pages')),
             },
         ),
     ]

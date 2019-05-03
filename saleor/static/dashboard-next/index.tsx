@@ -32,6 +32,7 @@ import ConfigurationSection, { configurationMenu } from "./configuration";
 import { CustomerSection } from "./customers";
 import DiscountSection from "./discounts";
 import HomePage from "./home";
+import AnalyticsPage from "./analytics";
 import i18n from "./i18n";
 import { NotFound } from "./NotFound";
 import OrdersSection from "./orders";
@@ -136,6 +137,10 @@ const App: React.FC = () => {
                                 path="/"
                                 component={HomePage}
                               />
+                              <SectionRoute
+                              permissions={[PermissionEnum.MANAGE_PRODUCTS]}
+                              path="/analytics"
+                              component={AnalyticsPage} />
                               <SectionRoute
                                 permissions={[PermissionEnum.MANAGE_PRODUCTS]}
                                 path="/categories"

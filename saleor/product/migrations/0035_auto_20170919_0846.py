@@ -14,14 +14,14 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='category',
-            options={'permissions': (('view_category', 'Can view categories'), ('edit_category', 'Can edit categories')), 'verbose_name': 'category', 'verbose_name_plural': 'categories'},
+            options={'permissions': (('view_category', 'Can views categories'), ('edit_category', 'Can edit categories')), 'verbose_name': 'category', 'verbose_name_plural': 'categories'},
         ),
         migrations.AlterModelOptions(
             name='product',
-            options={'permissions': (('view_product', 'Can view products'), ('edit_product', 'Can edit products')), 'verbose_name': 'product', 'verbose_name_plural': 'products'},
+            options={'permissions': (('view_product', 'Can views products'), ('edit_product', 'Can edit products')), 'verbose_name': 'product', 'verbose_name_plural': 'products'},
         ),
         migrations.AlterModelOptions(
             name='stocklocation',
-            options={'permissions': (('view_stock_location', 'Can view stock location'), ('edit_stock_location', 'Can edit stock location'))},
+            options={'permissions': (('view_stock_location', 'Can views stock location'), ('edit_stock_location', 'Can edit stock location'))},
         ),
     ]

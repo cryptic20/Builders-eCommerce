@@ -18,6 +18,6 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='user',
-            options={'permissions': (('view_user', 'Can view users'), ('edit_user', 'Can edit users'), ('view_group', 'Can view groups'), ('edit_group', 'Can edit groups'), ('view_staff', 'Can view staff'), ('edit_staff', 'Can edit staff'), ('impersonate_user', 'Can impersonate users')), 'verbose_name': 'user', 'verbose_name_plural': 'users'},
+            options={'permissions': (('view_user', 'Can views users'), ('edit_user', 'Can edit users'), ('view_group', 'Can views groups'), ('edit_group', 'Can edit groups'), ('view_staff', 'Can views staff'), ('edit_staff', 'Can edit staff'), ('impersonate_user', 'Can impersonate users')), 'verbose_name': 'user', 'verbose_name_plural': 'users'},
         ),
     ]

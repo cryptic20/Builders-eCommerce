@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='product',
-            options={'permissions': (('view_product', 'Can view products'), ('edit_product', 'Can edit products'), ('view_properties', 'Can view product properties'), ('edit_properties', 'Can edit product properties')), 'verbose_name': 'product', 'verbose_name_plural': 'products'},
+            options={'permissions': (('view_product', 'Can views products'), ('edit_product', 'Can edit products'), ('view_properties', 'Can views product properties'), ('edit_properties', 'Can edit product properties')), 'verbose_name': 'product', 'verbose_name_plural': 'products'},
         ),
     ]

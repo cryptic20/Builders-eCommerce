@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterModelOptions(
             name='order',
-            options={'ordering': ('-last_status_change',), 'permissions': (('view_order', 'Can view orders'), ('edit_order', 'Can edit orders'))},
+            options={'ordering': ('-last_status_change',), 'permissions': (('view_order', 'Can views orders'), ('edit_order', 'Can edit orders'))},
         ),
         migrations.AlterModelOptions(
             name='orderhistoryentry',

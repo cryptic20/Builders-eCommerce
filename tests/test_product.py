@@ -470,7 +470,7 @@ def test_include_products_from_subcategories_in_main_view(
         name='sub', slug='test', parent=category)
     product.category = subcategory
     product.save()
-    # URL to parent category view
+    # URL to parent category views
     url = reverse(
         'product:category', kwargs={
             'slug': category.slug, 'category_id': category.pk})

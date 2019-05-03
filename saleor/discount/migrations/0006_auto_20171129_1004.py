@@ -14,10 +14,10 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='sale',
-            options={'permissions': (('view_sale', 'Can view sales'), ('edit_sale', 'Can edit sales'))},
+            options={'permissions': (('view_sale', 'Can views sales'), ('edit_sale', 'Can edit sales'))},
         ),
         migrations.AlterModelOptions(
             name='voucher',
-            options={'permissions': (('view_voucher', 'Can view vouchers'), ('edit_voucher', 'Can edit vouchers'))},
+            options={'permissions': (('view_voucher', 'Can views vouchers'), ('edit_voucher', 'Can edit vouchers'))},
         ),
     ]

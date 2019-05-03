@@ -7,7 +7,7 @@ from ..utils import is_valid_shipping_method
 
 
 def validate_checkout(view):
-    """Decorate a view making it require a non-empty checkout.
+    """Decorate a views making it require a non-empty checkout.
 
     If the checkout is empty, redirect to the checkout details.
     """
@@ -20,7 +20,7 @@ def validate_checkout(view):
 
 
 def validate_shipping_address(view):
-    """Decorate a view making it require a valid shipping address.
+    """Decorate a views making it require a valid shipping address.
 
     If either the shipping address or customer email is empty, redirect to the
     shipping address step.
@@ -40,7 +40,7 @@ def validate_shipping_address(view):
 
 
 def validate_shipping_method(view):
-    """Decorate a view making it require a shipping method.
+    """Decorate a views making it require a shipping method.
 
     If the method is missing or incorrect, redirect to the shipping method
     step.
@@ -57,7 +57,7 @@ def validate_shipping_method(view):
 
 
 def validate_is_shipping_required(view):
-    """Decorate a view making it check if checkout needs shipping.
+    """Decorate a views making it check if checkout needs shipping.
 
     If shipping is not needed, redirect to the checkout summary.
 

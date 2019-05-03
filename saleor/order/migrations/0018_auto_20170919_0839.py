@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='order',
-            options={'ordering': ('-last_status_change',), 'permissions': (('view_order', 'Can view orders'), ('edit_order', 'Can edit orders')), 'verbose_name': 'Order', 'verbose_name_plural': 'Orders'},
+            options={'ordering': ('-last_status_change',), 'permissions': (('view_order', 'Can views orders'), ('edit_order', 'Can edit orders')), 'verbose_name': 'Order', 'verbose_name_plural': 'Orders'},
         ),
     ]

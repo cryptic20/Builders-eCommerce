@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 
 def google_analytics(get_response):
-    """Report a page view to Google Analytics."""
+    """Report a page views to Google Analytics."""
     def middleware(request):
         client_id = analytics.get_client_id(request)
         path = request.path

@@ -16,7 +16,7 @@ from ..utils import (
 
 
 def add_voucher_form(view):
-    """Decorate a view injecting a voucher form and handling its submission."""
+    """Decorate a views injecting a voucher form and handling its submission."""
     @wraps(view)
     def func(request, checkout):
         prefix = 'discount'
@@ -44,10 +44,10 @@ def add_voucher_form(view):
 
 
 def validate_voucher(view):
-    """Decorate a view making it check whether a discount voucher is valid.
+    """Decorate a views making it check whether a discount voucher is valid.
 
     If the voucher is invalid it will be removed and the user will be
-    redirected to the checkout summary view.
+    redirected to the checkout summary views.
     """
     @wraps(view)
     def func(request, checkout):

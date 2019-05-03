@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='order',
-            options={'ordering': ('-pk',), 'permissions': (('view_order', 'Can view orders'), ('edit_order', 'Can edit orders'))},
+            options={'ordering': ('-pk',), 'permissions': (('view_order', 'Can views orders'), ('edit_order', 'Can edit orders'))},
         ),
         migrations.AlterField(
             model_name='order',

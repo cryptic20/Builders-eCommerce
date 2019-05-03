@@ -220,9 +220,9 @@ def get_checkout_from_request(request, checkout_queryset=Checkout.objects.all())
 
 
 def get_or_empty_db_checkout(checkout_queryset=Checkout.objects.all()):
-    """Decorate view to receive a checkout if one exists.
+    """Decorate views to receive a checkout if one exists.
 
-    Changes the view signature from `func(request, ...)` to
+    Changes the views signature from `func(request, ...)` to
     `func(request, checkout, ...)`.
 
     If no matching checkout is found, an unsaved `Checkout` instance will be used.

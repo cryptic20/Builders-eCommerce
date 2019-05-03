@@ -44,7 +44,7 @@ def indexed_products(product_type, category):
     """Products to be found by search backend.
 
     We need existing objects with primary keys same as search service
-    returned in response. Otherwise search view won't find anything.
+    returned in response. Otherwise search views won't find anything.
     Purpose of this fixture is for integration with search service only!
     pks must be in response in appropiate recorded cassette.
     """

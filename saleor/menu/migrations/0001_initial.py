@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('slug', models.SlugField(unique=True)),
             ],
             options={
-                'permissions': (('view_menu', 'Can view menus'), ('edit_menu', 'Can edit menus')),
+                'permissions': (('view_menu', 'Can views menus'), ('edit_menu', 'Can edit menus')),
             },
         ),
         migrations.CreateModel(
