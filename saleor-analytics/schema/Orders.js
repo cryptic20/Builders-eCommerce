@@ -4,13 +4,30 @@ cube(`Orders`, {
   measures: {
     count: {
       type: `count`
+    },
+
+    totalNet: {
+      sql: `total_net`,
+      type: `sum`,
+      format: `currency`
+    },
+
+    averageValue: {
+      sql: `total_net`,
+      type: `avg`,
+      format: `currency`
     }
   },
 
   dimensions: {
     created: {
-      type: `time`,
-      sql: `created`
+      sql: `created`,
+      type: `time`
+    },
+
+    status: {
+      sql: `status`,
+      type: `string`
     }
   }
- });
+});
